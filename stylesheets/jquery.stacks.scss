@@ -1,0 +1,70 @@
+@import 'bourbon/bourbon';
+
+.stack
+{
+  position: relative;
+  width: 160px;
+  height: 140px;
+  margin: 20px;
+  
+  // Fix for flashing issue: http://stackoverflow.com/questions/8909919
+  -webkit-transform: translate3D(0, 0, 0);
+  
+  img
+  {
+    opacity: 0;
+    padding: 2px;
+    width: 96px; 
+    height: 96px;
+    background: #FFF;
+    position: absolute;
+    
+    @include box-shadow(0 0 2px rgba(0.0, 0.0, 0.0, 0.4));
+    
+    @include transition(all 0.8s ease-in-out);
+    @include transform(rotate(0deg));
+    
+    &:nth-child(1)
+    {
+      opacity: 1;
+      z-index: 3;
+      top: 30px; left: 40px;
+    }
+    
+    &:nth-child(2)
+    {
+      opacity: 1;
+      z-index: 2;
+      top: 20px; left: 10px;
+    }
+    
+    &:nth-child(3)
+    {
+      opacity: 1;
+      z-index: 1;
+      top: 10px; left: 50px;
+    }
+  }
+  
+  &:hover
+  {
+    img
+    {
+      &:nth-child(1)
+      {
+        @include transform(rotate(10deg) + ' ' + translate(20px,10px));
+      }
+
+      &:nth-child(2)
+      {   
+        @include transform(rotate(-10deg) + ' ' + translate(-20px,10px));
+      }
+
+      &:nth-child(3)
+      {
+        @include transform(rotate(10deg) + ' ' + translate(20px,-10px));
+      }
+    }
+  }
+  
+}
