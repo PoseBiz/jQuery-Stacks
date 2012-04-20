@@ -2,7 +2,7 @@
   position: relative;
   width: 160px;
   height: 140px;
-  margin: 20px;
+  margin: 0px;
   -webkit-transform: translate3D(0, 0, 0); }
   .stack img {
     opacity: 0;
