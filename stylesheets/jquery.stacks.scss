@@ -10,12 +10,84 @@
   // Fix for flashing issue: http://stackoverflow.com/questions/8909919
   -webkit-transform: translate3D(0, 0, 0);
   
+  &.large
+  {
+    width: 160px;
+    height: 140px;
+    
+    img
+    {
+      width: 90px;
+      height: 90px;
+      
+      &:nth-child(1) { top: 30px; left: 40px; }
+      &:nth-child(2) { top: 20px; left: 10px; }
+      &:nth-child(3) { top: 10px; left: 50px; }
+    }
+    
+    &:hover
+    {
+      img
+      {
+        &:nth-child(1)
+        {
+          @include transform(rotate(10deg) + ' ' + translate(20px,10px));
+        }
+
+        &:nth-child(2)
+        {   
+          @include transform(rotate(-10deg) + ' ' + translate(-20px,10px));
+        }
+
+        &:nth-child(3)
+        {
+          @include transform(rotate(10deg) + ' ' + translate(20px,-10px));
+        }
+      }
+    }
+  }
+  
+  &.small
+  {
+    width: 80px;
+    height: 70px;
+    
+    img
+    {
+      width: 45px;
+      height: 45px;
+      
+      &:nth-child(1) { top: 15px; left: 20px; }
+      &:nth-child(2) { top: 10px; left:  5px; }
+      &:nth-child(3) { top:  5px; left: 25px; }
+    }
+    
+    &:hover
+    {
+      img
+      {
+        &:nth-child(1)
+        {
+          @include transform(rotate(10deg) + ' ' + translate(10px,5px));
+        }
+
+        &:nth-child(2)
+        {   
+          @include transform(rotate(-10deg) + ' ' + translate(-10px,5px));
+        }
+
+        &:nth-child(3)
+        {
+          @include transform(rotate(10deg) + ' ' + translate(10px,-5px));
+        }
+      }
+    }
+  }
+  
   img
   {
     opacity: 0;
     padding: 2px;
-    width: 96px; 
-    height: 96px;
     background: #FFF;
     position: absolute;
     
@@ -24,47 +96,9 @@
     @include transition(all 0.8s ease-in-out);
     @include transform(rotate(0deg));
     
-    &:nth-child(1)
-    {
-      opacity: 1;
-      z-index: 3;
-      top: 30px; left: 40px;
-    }
-    
-    &:nth-child(2)
-    {
-      opacity: 1;
-      z-index: 2;
-      top: 20px; left: 10px;
-    }
-    
-    &:nth-child(3)
-    {
-      opacity: 1;
-      z-index: 1;
-      top: 10px; left: 50px;
-    }
-  }
-  
-  &:hover
-  {
-    img
-    {
-      &:nth-child(1)
-      {
-        @include transform(rotate(10deg) + ' ' + translate(20px,10px));
-      }
-
-      &:nth-child(2)
-      {   
-        @include transform(rotate(-10deg) + ' ' + translate(-20px,10px));
-      }
-
-      &:nth-child(3)
-      {
-        @include transform(rotate(10deg) + ' ' + translate(20px,-10px));
-      }
-    }
+    &:nth-child(1) { opacity: 1; z-index: 3; }
+    &:nth-child(2) { opacity: 1; z-index: 2; }
+    &:nth-child(3) { opacity: 1; z-index: 1; }
   }
   
 }

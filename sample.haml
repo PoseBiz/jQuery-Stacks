@@ -10,17 +10,19 @@
   %body
     .content
       
-      .stack{ data: { stack: "photos" } }
-        %img{ src: 'samples/image-1.png' }
-        %img{ src: 'samples/image-3.png' }
-        %img{ src: 'samples/image-2.png' }
+      - %w(small large).each do |size|
       
-      .stack{ data: { stack: "photos" } }
-        %img{ src: 'samples/image-4.png' }
-        %img{ src: 'samples/image-5.png' }
-        %img{ src: 'samples/image-6.png' }
+        .stack{ class: size, data: { stack: "photos" } }
+          %img{ src: 'samples/image-1.png' }
+          %img{ src: 'samples/image-3.png' }
+          %img{ src: 'samples/image-2.png' }
+      
+        .stack{ class: size, data: { stack: "photos" } }
+          %img{ src: 'samples/image-4.png' }
+          %img{ src: 'samples/image-5.png' }
+          %img{ src: 'samples/image-6.png' }
         
-      .stack{ data: { stack: "photos" } }
-        %img{ src: 'samples/image-7.png' }
-        %img{ src: 'samples/image-8.png' }
-        %img{ src: 'samples/image-9.png' }
+        .stack{ class: size, data: { stack: "photos" } }
+          %img{ src: 'samples/image-7.png' }
+          %img{ src: 'samples/image-8.png' }
+          %img{ src: 'samples/image-9.png' }
