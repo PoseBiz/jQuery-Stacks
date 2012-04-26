@@ -5,44 +5,44 @@
   margin: 0px;
   -webkit-transform: translate3D(0, 0, 0); }
   .stack.large {
-    width: 160px;
-    height: 140px; }
+    width: 140px;
+    height: 100px; }
     .stack.large img {
-      width: 90px;
-      height: 90px; }
+      width: 66px;
+      height: 66px; }
       .stack.large img:nth-child(1) {
-        top: 30px;
+        top: 25px;
         left: 40px; }
       .stack.large img:nth-child(2) {
-        top: 20px;
+        top: 15px;
         left: 10px; }
       .stack.large img:nth-child(3) {
-        top: 10px;
-        left: 50px; }
+        top: 5px;
+        left: 60px; }
     .stack.large:hover img:nth-child(1) {
-      -webkit-transform: rotate(10deg) translate(20px, 10px);
-      -moz-transform: rotate(10deg) translate(20px, 10px);
-      -ms-transform: rotate(10deg) translate(20px, 10px);
-      -o-transform: rotate(10deg) translate(20px, 10px);
-      transform: rotate(10deg) translate(20px, 10px); }
+      -webkit-transform: rotate(10deg) translate(10px, 5px);
+      -moz-transform: rotate(10deg) translate(10px, 5px);
+      -ms-transform: rotate(10deg) translate(10px, 5px);
+      -o-transform: rotate(10deg) translate(10px, 5px);
+      transform: rotate(10deg) translate(10px, 5px); }
     .stack.large:hover img:nth-child(2) {
-      -webkit-transform: rotate(-10deg) translate(-20px, 10px);
-      -moz-transform: rotate(-10deg) translate(-20px, 10px);
-      -ms-transform: rotate(-10deg) translate(-20px, 10px);
-      -o-transform: rotate(-10deg) translate(-20px, 10px);
-      transform: rotate(-10deg) translate(-20px, 10px); }
+      -webkit-transform: rotate(-10deg) translate(-10px, 5px);
+      -moz-transform: rotate(-10deg) translate(-10px, 5px);
+      -ms-transform: rotate(-10deg) translate(-10px, 5px);
+      -o-transform: rotate(-10deg) translate(-10px, 5px);
+      transform: rotate(-10deg) translate(-10px, 5px); }
     .stack.large:hover img:nth-child(3) {
-      -webkit-transform: rotate(10deg) translate(20px, -10px);
-      -moz-transform: rotate(10deg) translate(20px, -10px);
-      -ms-transform: rotate(10deg) translate(20px, -10px);
-      -o-transform: rotate(10deg) translate(20px, -10px);
-      transform: rotate(10deg) translate(20px, -10px); }
+      -webkit-transform: rotate(10deg) translate(10px, -5px);
+      -moz-transform: rotate(10deg) translate(10px, -5px);
+      -ms-transform: rotate(10deg) translate(10px, -5px);
+      -o-transform: rotate(10deg) translate(10px, -5px);
+      transform: rotate(10deg) translate(10px, -5px); }
   .stack.small {
     width: 80px;
     height: 70px; }
     .stack.small img {
-      width: 45px;
-      height: 45px; }
+      width: 46px;
+      height: 46px; }
       .stack.small img:nth-child(1) {
         top: 15px;
         left: 20px; }
