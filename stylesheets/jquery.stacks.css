@@ -75,9 +75,9 @@
     padding: 2px;
     background: #FFF;
     position: absolute;
-    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
     -webkit-transition-property: all, 0.8s, ease-in-out;
     -moz-transition-property: all, 0.8s, ease-in-out;
     -ms-transition-property: all, 0.8s, ease-in-out;

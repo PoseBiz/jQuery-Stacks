@@ -91,7 +91,7 @@
     background: #FFF;
     position: absolute;
     
-    @include box-shadow(0 0 2px rgba(0.0, 0.0, 0.0, 0.4));
+    @include box-shadow(0 0 4px rgba(0.0, 0.0, 0.0, 0.8));
     
     @include transition(all 0.8s ease-in-out);
     @include transform(rotate(0deg));
