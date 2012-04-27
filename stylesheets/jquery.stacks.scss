@@ -3,8 +3,6 @@
 .stack
 {
   position: relative;
-  width: 160px;
-  height: 140px;
   margin: 0px;
   
   // Fix for flashing issue: http://stackoverflow.com/questions/8909919
@@ -12,17 +10,17 @@
   
   &.large
   {
-    width: 140px;
-    height: 100px;
+    width: 130px;
+    height: 90px;
     
     img
     {
-      width: 66px;
-      height: 66px;
+      width: 56px;
+      height: 56px;
       
       &:nth-child(1) { top: 25px; left: 40px; }
-      &:nth-child(2) { top: 15px; left: 10px; }
-      &:nth-child(3) { top:  5px; left: 60px; }
+      &:nth-child(2) { top: 15px; left:  5px; }
+      &:nth-child(3) { top:  5px; left: 65px; }
     }
     
     &:hover
@@ -54,12 +52,12 @@
     
     img
     {
-      width: 46px;
-      height: 46px;
+      width: 36px;
+      height: 36px;
       
-      &:nth-child(1) { top: 15px; left: 20px; }
-      &:nth-child(2) { top: 10px; left:  5px; }
-      &:nth-child(3) { top:  5px; left: 25px; }
+      &:nth-child(1) { top: 25px; left: 20px; }
+      &:nth-child(2) { top: 15px; left:  5px; }
+      &:nth-child(3) { top:  5px; left: 35px; }
     }
     
     &:hover
@@ -68,17 +66,17 @@
       {
         &:nth-child(1)
         {
-          @include transform(rotate(10deg) + ' ' + translate(10px,5px));
+          @include transform(rotate(10deg) + ' ' + translate(6px,3px));
         }
 
         &:nth-child(2)
         {   
-          @include transform(rotate(-10deg) + ' ' + translate(-10px,5px));
+          @include transform(rotate(-10deg) + ' ' + translate(-6px,3px));
         }
 
         &:nth-child(3)
         {
-          @include transform(rotate(10deg) + ' ' + translate(10px,-5px));
+          @include transform(rotate(10deg) + ' ' + translate(6px,-3px));
         }
       }
     }

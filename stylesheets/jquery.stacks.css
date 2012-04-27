@@ -1,24 +1,22 @@
 .stack {
   position: relative;
-  width: 160px;
-  height: 140px;
   margin: 0px;
   -webkit-transform: translate3D(0, 0, 0); }
   .stack.large {
-    width: 140px;
-    height: 100px; }
+    width: 130px;
+    height: 90px; }
     .stack.large img {
-      width: 66px;
-      height: 66px; }
+      width: 56px;
+      height: 56px; }
       .stack.large img:nth-child(1) {
         top: 25px;
         left: 40px; }
       .stack.large img:nth-child(2) {
         top: 15px;
-        left: 10px; }
+        left: 5px; }
       .stack.large img:nth-child(3) {
         top: 5px;
-        left: 60px; }
+        left: 65px; }
     .stack.large:hover img:nth-child(1) {
       -webkit-transform: rotate(10deg) translate(10px, 5px);
       -moz-transform: rotate(10deg) translate(10px, 5px);
@@ -41,35 +39,35 @@
     width: 80px;
     height: 70px; }
     .stack.small img {
-      width: 46px;
-      height: 46px; }
+      width: 36px;
+      height: 36px; }
       .stack.small img:nth-child(1) {
-        top: 15px;
+        top: 25px;
         left: 20px; }
       .stack.small img:nth-child(2) {
-        top: 10px;
+        top: 15px;
         left: 5px; }
       .stack.small img:nth-child(3) {
         top: 5px;
-        left: 25px; }
+        left: 35px; }
     .stack.small:hover img:nth-child(1) {
-      -webkit-transform: rotate(10deg) translate(10px, 5px);
-      -moz-transform: rotate(10deg) translate(10px, 5px);
-      -ms-transform: rotate(10deg) translate(10px, 5px);
-      -o-transform: rotate(10deg) translate(10px, 5px);
-      transform: rotate(10deg) translate(10px, 5px); }
+      -webkit-transform: rotate(10deg) translate(6px, 3px);
+      -moz-transform: rotate(10deg) translate(6px, 3px);
+      -ms-transform: rotate(10deg) translate(6px, 3px);
+      -o-transform: rotate(10deg) translate(6px, 3px);
+      transform: rotate(10deg) translate(6px, 3px); }
     .stack.small:hover img:nth-child(2) {
-      -webkit-transform: rotate(-10deg) translate(-10px, 5px);
-      -moz-transform: rotate(-10deg) translate(-10px, 5px);
-      -ms-transform: rotate(-10deg) translate(-10px, 5px);
-      -o-transform: rotate(-10deg) translate(-10px, 5px);
-      transform: rotate(-10deg) translate(-10px, 5px); }
+      -webkit-transform: rotate(-10deg) translate(-6px, 3px);
+      -moz-transform: rotate(-10deg) translate(-6px, 3px);
+      -ms-transform: rotate(-10deg) translate(-6px, 3px);
+      -o-transform: rotate(-10deg) translate(-6px, 3px);
+      transform: rotate(-10deg) translate(-6px, 3px); }
     .stack.small:hover img:nth-child(3) {
-      -webkit-transform: rotate(10deg) translate(10px, -5px);
-      -moz-transform: rotate(10deg) translate(10px, -5px);
-      -ms-transform: rotate(10deg) translate(10px, -5px);
-      -o-transform: rotate(10deg) translate(10px, -5px);
-      transform: rotate(10deg) translate(10px, -5px); }
+      -webkit-transform: rotate(10deg) translate(6px, -3px);
+      -moz-transform: rotate(10deg) translate(6px, -3px);
+      -ms-transform: rotate(10deg) translate(6px, -3px);
+      -o-transform: rotate(10deg) translate(6px, -3px);
+      transform: rotate(10deg) translate(6px, -3px); }
   .stack img {
     opacity: 0;
     padding: 2px;
