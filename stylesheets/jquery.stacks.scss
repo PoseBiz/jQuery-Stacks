@@ -13,7 +13,7 @@
     width: 130px;
     height: 90px;
     
-    img
+    img,.blank
     {
       width: 56px;
       height: 56px;
@@ -22,10 +22,17 @@
       &:nth-child(2) { top: 15px; left:  5px; }
       &:nth-child(3) { top:  5px; left: 65px; }
     }
+          
+    .blank .icon
+    {
+      width: 54px;
+      height: 54px;
+      border: thin solid #DDD;
+    }
     
     &:hover
     {
-      img
+      img,.blank
       {
         &:nth-child(1)
         {
@@ -50,7 +57,7 @@
     width: 80px;
     height: 70px;
     
-    img
+    img,.blank
     {
       width: 36px;
       height: 36px;
@@ -60,9 +67,16 @@
       &:nth-child(3) { top:  5px; left: 35px; }
     }
     
+    .blank .icon
+    {
+      width: 34px;
+      height: 34px;
+      border: thin solid #DDD;
+    }
+    
     &:hover
     {
-      img
+      img,.blank
       {
         &:nth-child(1)
         {
@@ -82,7 +96,7 @@
     }
   }
   
-  img
+  img,.blank
   {
     opacity: 0;
     padding: 2px;
