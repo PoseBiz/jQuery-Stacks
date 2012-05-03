@@ -20,8 +20,8 @@ Stack.prototype =
 $.fn.stack = (options) ->
   $(this).each () ->
     $this = $(this)
-    data = $this.data('stackerino')
-    $this.data('stackerino', data = new Stack(this, options)) unless data?
+    data = $this.data('stacks')
+    $this.data('stacks', data = new Stack(this, options)) unless data?
     data[options]() if typeof options is 'string'
     data[options.action](options) if options and typeof options.action is 'string'
 

@@ -8,6 +8,23 @@
   // Fix for flashing issue: http://stackoverflow.com/questions/8909919
   -webkit-transform: translate3D(0, 0, 0);
   
+  img,.blank
+  {
+    opacity: 0;
+    padding: 2px;
+    background: #FFF;
+    position: absolute;
+    
+    @include box-shadow(0 0 4px rgba(0.0, 0.0, 0.0, 0.8));
+    
+    @include transition(all 0.8s ease-in-out);
+    @include transform(rotate(0deg));
+    
+    &:nth-child(1) { opacity: 1; z-index: 3; }
+    &:nth-child(2) { opacity: 1; z-index: 2; }
+    &:nth-child(3) { opacity: 1; z-index: 1; }
+  }
+  
   &.large
   {
     width: 130px;
@@ -31,7 +48,7 @@
     }
     
     &:hover
-    {
+    { 
       img,.blank
       {
         &:nth-child(1)
@@ -47,6 +64,14 @@
         &:nth-child(3)
         {
           @include transform(rotate(10deg) + ' ' + translate(10px,-5px));
+        }
+      }
+      
+      &.static
+      {
+        img,.blank
+        {
+          @include transform(none !important);
         }
       }
     }
@@ -94,23 +119,14 @@
         }
       }
     }
-  }
-  
-  img,.blank
-  {
-    opacity: 0;
-    padding: 2px;
-    background: #FFF;
-    position: absolute;
     
-    @include box-shadow(0 0 4px rgba(0.0, 0.0, 0.0, 0.8));
-    
-    @include transition(all 0.8s ease-in-out);
-    @include transform(rotate(0deg));
-    
-    &:nth-child(1) { opacity: 1; z-index: 3; }
-    &:nth-child(2) { opacity: 1; z-index: 2; }
-    &:nth-child(3) { opacity: 1; z-index: 1; }
+    &.static
+    {
+      img,.blank
+      {
+        @include transform(none !important);
+      }
+    }
   }
   
 }

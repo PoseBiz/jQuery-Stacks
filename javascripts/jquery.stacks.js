@@ -26,8 +26,8 @@ Copyright 2012 Kevin Sylvestre
     return $(this).each(function() {
       var $this, data;
       $this = $(this);
-      data = $this.data('stackerino');
-      if (data == null) $this.data('stackerino', data = new Stack(this, options));
+      data = $this.data('stacks');
+      if (data == null) $this.data('stacks', data = new Stack(this, options));
       if (typeof options === 'string') data[options]();
       if (options && typeof options.action === 'string') {
         return data[options.action](options);
