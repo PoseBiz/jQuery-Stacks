@@ -4,7 +4,7 @@
 {
   position: relative;
   margin: 0px;
-  
+    
   // Fix for flashing issue: http://stackoverflow.com/questions/8909919
   -webkit-transform: translate3D(0, 0, 0);
   
@@ -15,14 +15,63 @@
     background: #FFF;
     position: absolute;
     
-    @include box-shadow(0 0 4px rgba(0.0, 0.0, 0.0, 0.8));
+    @include box-shadow(0px 1px 3px rgba(0.0, 0.0, 0.0, 0.6));
     
-    @include transition(all 0.8s ease-in-out);
+    @include transition(all 0.2s ease-in-out);
     @include transform(rotate(0deg));
     
     &:nth-child(1) { opacity: 1; z-index: 3; }
     &:nth-child(2) { opacity: 1; z-index: 2; }
     &:nth-child(3) { opacity: 1; z-index: 1; }
+  }
+  
+  width: 160px;
+  height: 120px;
+  
+  img,.blank
+  {
+    width: 76px;
+    height: 76px;
+    
+    &:nth-child(1) { top: 35px; left: 55px; }
+    &:nth-child(2) { top: 15px; left:  5px; }
+    &:nth-child(3) { top:  5px; left: 75px; }
+  }
+  
+  .blank .icon
+  {
+    width: 74px;
+    height: 74px;
+    border: thin solid #DDD;
+  }
+  
+  &:hover
+  { 
+    img,.blank
+    {
+      &:nth-child(1)
+      {
+        @include transform(rotate(10deg) + ' ' + translate(10px,5px));
+      }
+
+      &:nth-child(2)
+      {   
+        @include transform(rotate(-10deg) + ' ' + translate(-10px,5px));
+      }
+
+      &:nth-child(3)
+      {
+        @include transform(rotate(10deg) + ' ' + translate(10px,-5px));
+      }
+    }
+  }
+  
+  &.static
+  {
+    img,.blank
+    {
+      @include transform(none !important);
+    }
   }
   
   &.large
@@ -44,7 +93,6 @@
     {
       width: 54px;
       height: 54px;
-      border: thin solid #DDD;
     }
     
     &:hover
@@ -64,14 +112,6 @@
         &:nth-child(3)
         {
           @include transform(rotate(10deg) + ' ' + translate(10px,-5px));
-        }
-      }
-      
-      &.static
-      {
-        img,.blank
-        {
-          @include transform(none !important);
         }
       }
     }
@@ -96,7 +136,6 @@
     {
       width: 34px;
       height: 34px;
-      border: thin solid #DDD;
     }
     
     &:hover
@@ -117,14 +156,6 @@
         {
           @include transform(rotate(10deg) + ' ' + translate(6px,-3px));
         }
-      }
-    }
-    
-    &.static
-    {
-      img,.blank
-      {
-        @include transform(none !important);
       }
     }
   }
